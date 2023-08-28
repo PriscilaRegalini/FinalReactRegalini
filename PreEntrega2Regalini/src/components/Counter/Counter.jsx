@@ -1,6 +1,6 @@
 import useCounter from "../hooks/useCounter";
 
-//Componente que donde se puede agregar o quitar un producto al carrito (usa el hook useCounter)
+//Componente donde se puede agregar o quitar un producto al carrito (usa el hook useCounter)
 
 const Counter = ({ stock, initial }) => {
   const { increment, count, decrement } = useCounter(stock, initial);
