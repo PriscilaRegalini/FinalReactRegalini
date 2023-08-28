@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.3.1",
+    "prop-types": "^15.8.1",
+    "proptypes": "^1.1.0",
+    "sass": "^1.66.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass",
+    "sass:watch": "sass --watch ./PreEntrega2Regalini/src/index.scss  ./PreEntrega2Regalini/src/index.css"
+  }
+}

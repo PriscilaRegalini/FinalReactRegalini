@@ -1,0 +1,89 @@
+// Style de las Card de ItemList ( el listado de Productos )
+
+.listContainer{
+    margin-left: 90px;
+    margin-top: 90px;
+}
+.cardList{
+    width: 70%;
+    padding: 20px;
+    text-align: left;
+    &:hover{
+        border: 2px solid #3097db;
+     }
+  }
+.priceProduct{
+    color:"#3097db";
+    font-family:'Poppins', sans-serif;
+    margin-top: 20px ;
+    text-align: left;
+    font-size: 1.5em; 
+}
+.stockProduct{
+    color:"#3097db";
+    font-family:'Poppins', sans-serif;
+    font-weight: 300;
+    margin-top: 0px ;
+    text-align: left;
+    font-size: 0.8em;
+}
+  .img{
+    width: 100%;  
+    height: 250px; 
+    margin-top: 10px;
+}
+
+.h2List{
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #606060;
+    text-align: center;
+}
+
+@media (max-width: 994px){
+
+    .movile{
+        display: flex;
+        flex-direction: none !important;
+        width: 100%;
+       justify-content: center;
+
+    }
+    .cardList{
+        margin-left: 0px !important;
+        width: 100% !important;
+        padding: 30px;
+        text-align: center;
+      }
+
+      .h2List{
+        font-size: 1.2em!important;
+        font-weight: bold;
+        color: #606060;
+        text-align: center;
+    }
+
+}
+@media (max-width: 1395px){
+
+.img{
+    width:100%;
+    height: 250px;
+}
+      .h2List{
+        overflow: hidden;
+        font-size: 0.9em;
+        font-weight: bold;
+        color: #606060;
+        text-align: center;
+    }
+
+}
+.loading{
+    color:"#3097db";
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+    font-size: 2.5em;
+    margin-top: 90px;
+
+}

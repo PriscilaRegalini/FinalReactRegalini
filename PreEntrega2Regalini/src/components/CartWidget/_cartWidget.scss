@@ -1,0 +1,21 @@
+//Style del Cart del NavBar
+
+.btnCarrito{
+    fill:#606060;
+    background-color:  rgb(255, 255, 255);
+    &:hover{
+    fill:#3097db;
+    }
+    
+    &:hover{
+    background-color:#cce9fc;
+    border-color:#3097db;
+    }
+   }
+   .spanCompra{
+    color: white;
+    background-color:#3097db;
+   }
+   .svgCarrito{
+    margin-bottom: 5px;
+  }

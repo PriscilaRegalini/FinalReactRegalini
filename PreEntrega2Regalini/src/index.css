@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,500;1,200&family=Poppins:wght@100;300;500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+.listContainer {
+  margin-left: 90px;
+  margin-top: 90px;
+}
+
+.cardList {
+  width: 70%;
+  padding: 20px;
+  text-align: left;
+}
+.cardList:hover {
+  border: 2px solid #3097db;
+}
+
+.priceProduct {
+  color: "#3097db";
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.stockProduct {
+  color: "#3097db";
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  margin-top: 0px;
+  text-align: left;
+  font-size: 0.8em;
+}
+
+.img {
+  width: 100%;
+  height: 250px;
+  margin-top: 10px;
+}
+
+.h2List {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #606060;
+  text-align: center;
+}
+
+@media (max-width: 994px) {
+  .movile {
+    display: flex;
+    flex-direction: none !important;
+    width: 100%;
+    justify-content: center;
+  }
+  .cardList {
+    margin-left: 0px !important;
+    width: 100% !important;
+    padding: 30px;
+    text-align: center;
+  }
+  .h2List {
+    font-size: 1.2em !important;
+    font-weight: bold;
+    color: #606060;
+    text-align: center;
+  }
+}
+@media (max-width: 1395px) {
+  .img {
+    width: 100%;
+    height: 250px;
+  }
+  .h2List {
+    overflow: hidden;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: #606060;
+    text-align: center;
+  }
+}
+.loading {
+  color: "#3097db";
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 90px;
+}
+
+.descriptionProduct {
+  color: "#3097db";
+  font-weight: 300;
+  text-align: left;
+  margin-top: -50px;
+  margin-left: -15px;
+}
+
+.h2Detail {
+  font-family: "Poppins", sans-serif;
+  color: #3097db;
+  text-align: left;
+  font-size: 2em;
+  padding: 20px;
+  margin-left: 10px;
+  margin-bottom: -30px;
+}
+
+.priceProductDetail {
+  color: "#3097db";
+  font-family: "Poppins", sans-serif;
+  text-align: left;
+  font-size: 1.5em;
+}
+
+.imgDetail {
+  width: 30%;
+  padding: 0px;
+  margin-top: -40px;
+  margin-right: 40px;
+}
+
+.cardDetail {
+  width: 100%;
+  justify-content: center;
+  margin-top: 90px !important;
+  margin-left: 50px !important;
+}
+
+.boxDetail {
+  margin-top: 40px;
+  padding: 40px;
+}
+
+@media (max-width: 1005px) {
+  .card {
+    margin-left: 0px !important;
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+  }
+  h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #606060;
+  }
+}
+.btnCarrito {
+  fill: #606060;
+  background-color: rgb(255, 255, 255);
+}
+.btnCarrito:hover {
+  fill: #3097db;
+}
+.btnCarrito:hover {
+  background-color: #cce9fc;
+  border-color: #3097db;
+}
+
+.spanCompra {
+  color: white;
+  background-color: #3097db;
+}
+
+.svgCarrito {
+  margin-bottom: 5px;
+}
+
+.h2Groso {
+  padding: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #3097db;
+  font-family: "Poppins", sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  text-align: center;
+}
+
+.presentation {
+  margin-top: -20px;
+  padding: 30px;
+  margin-left: -40px;
+}
+.presentation .box {
+  border-left: #3097db 2px solid;
+  border-right: #3097db 2px solid;
+  border-radius: 10px;
+  padding: 10px;
+}
+.presentation .h3Groso {
+  color: "#3097db";
+  font-family: "IBM Plex Mono";
+  font-weight: 500;
+  margin-top: 10px;
+  text-align: left;
+  margin-left: 30px;
+}
+.presentation .pDescription {
+  margin-left: 30px;
+  margin-top: 20px;
+  font-family: "IBM Plex Mono";
+  font-style: italic;
+  text-align: left;
+}
+
+nav {
+  background-color: rgb(255, 255, 255);
+  border-bottom: rgb(180, 181, 181) 2px solid;
+  position: fixed !important;
+  z-index: 999;
+  width: 100%;
+  margin-top: -90px;
+}
+nav a {
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+nav .title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 3em;
+  margin-top: -40px;
+  margin-bottom: -40px;
+  color: black;
+}
+nav .title:hover {
+  color: #606060;
+}
+nav .link {
+  color: #606060;
+  font-size: 0.9em;
+  padding-left: 30px !important;
+}
+nav .link:hover {
+  color: #3097db;
+}
+nav .slogan {
+  font-family: "Poppins", sans-serif;
+  margin-left: 220px;
+  font-weight: 300;
+  color: #3097db;
+  font-size: 1.3em;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  color: #606060;
+  margin-top: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(247, 247, 247);
+}
+
+/*# sourceMappingURL=index.css.map */

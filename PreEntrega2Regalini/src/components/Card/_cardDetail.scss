@@ -1,0 +1,61 @@
+// Style de las Card de ItemDetail ( el detalle de un Producto)
+
+.descriptionProduct{
+    color:"#3097db";
+    font-weight: 300;
+    text-align: left;
+    margin-top: -50px;
+    margin-left: -15px;
+}
+
+.h2Detail{
+    font-family:'Poppins', sans-serif;
+    color:#3097db;
+    text-align: left;
+    font-size: 2em;
+    padding: 20px;
+    margin-left: 10px;
+    margin-bottom: -30px;
+   
+}
+
+.priceProductDetail{
+    color:"#3097db";
+    font-family:'Poppins', sans-serif;
+    text-align: left;
+    font-size: 1.5em;
+    
+}
+.imgDetail{
+    width: 30%; 
+    padding: 0px; 
+    margin-top: -40px;
+    margin-right: 40px;
+}
+.cardDetail{
+    width: 100%;
+    justify-content: center;
+    margin-top: 90px !important;
+    margin-left: 50px !important;
+    
+  }
+.boxDetail{
+    margin-top: 40px;
+    padding: 40px;
+}
+
+@media (max-width: 1005px){
+
+    .card{
+        margin-left: 0px !important;
+        width: 100%;
+        padding: 30px;
+        text-align: center;
+      }
+      h2{
+        font-size: 2em;
+        font-weight: bold;
+        color: #606060;
+    }
+
+}
