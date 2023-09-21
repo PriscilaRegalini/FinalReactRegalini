@@ -145,6 +145,10 @@
     color: #606060;
   }
 }
+.detailProduct {
+  list-style-type: none;
+}
+
 .btnCarrito {
   fill: #606060;
   background-color: rgb(255, 255, 255);

@@ -26,7 +26,7 @@ return (
                 {!isLoading && product.length === 0 && <p>No hay productos</p>}
         </div>
 
-        <li key={product.id}>
+        <li  className="detailProduct" key={product.id}>
             <CardDetail product={product}
                 title={product.title}
                 img={`../src/assets/${product.imageId}`}

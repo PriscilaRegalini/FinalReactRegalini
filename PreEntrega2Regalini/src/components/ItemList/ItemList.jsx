@@ -23,10 +23,10 @@ return (
         <div className='row '> 
           {products.map((products) => (
             <div className='col-4  movile' key={products.id}>
-            <Link className="navbar-brand " to={`/product/${products.id}`}> 
+            <Link className="navbar-brand  " to={`/product/${products.id}`}> 
                 <Card 
                     title={products.title}
-                    img={`../src/assets/${products.imageId}`}
+                    img={`${products.imageId}`}
                     description={products.description}  
                     price={products.price}
                     stock={products.stock}
