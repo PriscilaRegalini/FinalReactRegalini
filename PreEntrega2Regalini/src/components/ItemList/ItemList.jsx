@@ -26,7 +26,7 @@ return (
             <Link className="navbar-brand  " to={`/product/${products.id}`}> 
                 <Card 
                     title={products.title}
-                    img={`${products.imageId}`}
+                    img={`../src/assets/${products.imageId}`}
                     description={products.description}  
                     price={products.price}
                     stock={products.stock}
