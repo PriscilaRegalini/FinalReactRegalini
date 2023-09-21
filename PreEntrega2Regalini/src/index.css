@@ -162,10 +162,6 @@
   background-color: #3097db;
 }
 
-.svgCarrito {
-  margin-bottom: 5px;
-}
-
 .h2Groso {
   padding: 20px;
   margin-top: 20px;
@@ -239,7 +235,99 @@ nav .slogan {
   margin-left: 220px;
   font-weight: 300;
   color: #3097db;
-  font-size: 1.3em;
+  font-size: 0.8em;
+}
+
+.buttonAddCart {
+  margin-top: 10px;
+}
+
+.svgCarrito {
+  margin-bottom: 5px;
+}
+
+.divAddCart {
+  display: flex;
+  flex-direction: row;
+  margin-top: 55px;
+}
+.divAddCart button {
+  width: 10%;
+  height: 100%;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 4px 5px;
+}
+.divAddCart p {
+  border: 1px solid black;
+  border-radius: 7px;
+  padding: 10px;
+  font-size: 1em;
+  margin-right: 10px;
+}
+
+.order {
+  margin-top: 90px;
+}
+
+form {
+  font-family: "Poppins", sans-serif;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+form label {
+  margin: 0px 10px;
+}
+form input {
+  border-radius: 7px;
+  border: solid 1px gray;
+  width: 20%;
+  font-weight: 300;
+  padding: 5px;
+}
+form .btn {
+  font-size: 0.7em;
+}
+form .buy {
+  font-size: 1em;
+}
+
+.productCart {
+  padding: 25px;
+  list-style-type: none;
+}
+
+.titleCheckout {
+  font-size: 1.5em;
+  margin-top: 20px;
+  border-bottom: 1px solid #000;
+}
+
+.resultOrder {
+  text-align: center;
+  margin-top: 90px;
+  padding: 40px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.titleOrder {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin-top: 10px;
+  margin-bottom: -20px;
 }
 
 h1 {

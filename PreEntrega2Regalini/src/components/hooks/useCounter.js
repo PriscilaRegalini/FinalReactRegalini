@@ -5,7 +5,7 @@ const useCounter = (stock, initialValue = 0) => {
 
   const increment = () => {
     if (count >= stock) return;
-    setCount(count + 1);
+    setCount(count + 1);  
   };
 
   const decrement = () => {

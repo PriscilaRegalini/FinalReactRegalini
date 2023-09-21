@@ -3,37 +3,36 @@ import Card from "../Card/CardList"
 import propTypes from "prop-types";
 import ItemPresentation from "../ItemPresentation/ItemPresentation";
 
-//Componente que muestra el listado de productos y la presentación del sitio
-
+// Listado de productos y la presentación del sitio
 
 const ItemList=({products, isLoading})=> {
 
 return (
     <>          
       <div className="loading"> 
-        
-              {isLoading && <p>Cargando...</p>}
-        
-              {!isLoading && products.length === 0 && <p>No hay productos</p>}
+          {isLoading && <>
+            <div className="d-flex justify-content-center">
+                <div className="spinner-border text-primary mt-5" role="status">
+                <span className="visually-hidden">Loading...</span>
+                </div>
+            </div></>}
+          {!isLoading && products.length === 0 && <p>No hay productos</p>}
       </div>
+
       <div className="container listContainer">
         <div className='row '> 
           {products.map((products) => (
-
             <div className='col-4  movile' key={products.id}>
-            
             <Link className="navbar-brand " to={`/product/${products.id}`}> 
                 <Card 
-                    title={products.name}
-                    img={products.img}
+                    title={products.title}
+                    img={`../src/assets/${products.imageId}`}
                     description={products.description}  
-                    precio={products.precio}
+                    price={products.price}
                     stock={products.stock}
                 />
             </Link>
-          
             </div>
-
           ))}
           <ItemPresentation greeting="Regalos Grosos para gente Grosa"/>
         </div>

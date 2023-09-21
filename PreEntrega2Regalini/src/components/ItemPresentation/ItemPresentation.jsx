@@ -1,10 +1,10 @@
 const ItemPresentation=({greeting})=> {
     
-//Componente que muestra el slogan y presentación del sitio
+//slogan y presentación del sitio
 
     return (
         <>     
-            <div className="presentation">
+          <div className="presentation">
             <h2 className="h2Groso">{greeting}</h2>  
               <div className="box">
                 <h3 className="h3Groso">Groso</h3>
@@ -12,8 +12,8 @@ const ItemPresentation=({greeting})=> {
                 </p>
                 <p className="pDescription">
                 Generalmente esta palabra se la usa acompañada por el prefijo "re".<strong>"Es re groso" </strong></p> 
-                </div>
-            </div>
+              </div>
+          </div>
         </>
       )
     };

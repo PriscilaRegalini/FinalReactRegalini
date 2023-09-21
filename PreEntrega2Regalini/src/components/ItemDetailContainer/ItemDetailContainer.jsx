@@ -4,7 +4,7 @@ import { useParams } from "react-router-dom";
 import { getProduct } from "../services/ApiProducts"
 import ItemDetail from "../ItemDetail/ItemDetail";
 
-//Componente que contiene la lógica del detalle de un producto
+//DETALLE DE PRODUCTO
 
 const ItemDetailContainer=()=> {
 
@@ -15,7 +15,7 @@ const ItemDetailContainer=()=> {
   useEffect(() => {
     getProduct(params)
       .then((result) => {
-        setProduct(result.product);  
+        setProduct(result); 
       })
       .catch(() => {
         setProduct(null);
@@ -25,7 +25,7 @@ const ItemDetailContainer=()=> {
       });
   }, [params]);
 
-  return <ItemDetail product={product} isLoading={isLoading}/>;
+  return <ItemDetail product={product} isLoading={isLoading} />;
 
   }
   

@@ -1,7 +1,7 @@
 import Counter from "../Counter/Counter"
 
-const Card=({title, img, description, precio, stock})=> {
-  
+const Card=({product, title, img, description, price, stock, add, remove})=> {
+
     return (
       <>
             <div className='col-2 m-3  cardDetail'>    
@@ -10,15 +10,12 @@ const Card=({title, img, description, precio, stock})=> {
                 <img className=" col-4 border rounded imgDetail" src={img}/>
                 <div className="col-4">
                 <p className="descriptionProduct p-3">{description}</p> 
-                <p className="priceProductDetail">$ {precio}</p>  
-                <p className="disponiblesProduct">Stock: {stock}</p> 
-                <Counter stock={stock} initial={0}/>
+                <p className="priceProductDetail">$ {price}</p>  
+                <p className="disponiblesProduct">Stock: {stock}</p>
+               <Counter stock={stock} initial={0} product={product}/>
                 </div>
-               
-              </div>
-               
-            </div>
-            
+              </div>        
+            </div>        
       </>
     )
   }

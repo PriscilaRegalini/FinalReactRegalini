@@ -1,9 +1,10 @@
 
 import CardDetail from "../Card/CardDetail"
+import PropTypes from "prop-types";
 
-//Componente que muestra el detalle de un producto
+//Detalle de producto
 
-const ItemDetail=({product, isLoading})=> {
+const ItemDetail=({product, isLoading, addItem, removeItem})=> {
 
 if (!product) {
 
@@ -12,26 +13,41 @@ if (!product) {
 
 return (
     <> 
- <div className="loading">
-   
-        {isLoading && <p>Cargando...</p>}
-  
-        {!isLoading && product.length === 0 && <p>No hay productos</p>}
-</div>
-
-
-    <li key={product.id}>
-        <CardDetail 
-            title={product.name}
-            img={product.img}
-            description={product.description}  
-            precio={product.precio}
-            stock={product.stock}
-        />
+        <div className="loading">
         
-    </li>
+                {isLoading && <>
+                    <div className="d-flex justify-content-center">
+                        <div className="spinner-border text-primary mt-5" role="status">
+                        <span className="visually-hidden">Loading...</span>
+                        </div>
+                    </div>
+                </>}
+        
+                {!isLoading && product.length === 0 && <p>No hay productos</p>}
+        </div>
+
+        <li key={product.id}>
+            <CardDetail product={product}
+                title={product.title}
+                img={`../src/assets/${product.imageId}`}
+                description={product.description}  
+                price={product.price}
+                stock={product.stock}
+                add={() => addItem(product, 1)}
+                remove={() => removeItem(product.id)}
+            />     
+        </li>
     </>
   )
 };
+    ItemDetail.propTypes = {
+    item: PropTypes.object,
+    isLoading: PropTypes.bool,
+    addItem: PropTypes.func,
+    removeItem: PropTypes.func,
+
+  };
 
   export default ItemDetail
+
+  
