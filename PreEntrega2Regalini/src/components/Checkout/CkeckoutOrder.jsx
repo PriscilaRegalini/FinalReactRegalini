@@ -56,8 +56,6 @@ const [formState, setFormState] = useState({
 
 //validaciones
 const onKeyDown = (event) => {
-    console.log("handleKeyDown", event.key);
-    console.log("handleKeyDown", event.target.value);
 
     const validName = "0123456789";
     const validPhone = " abcdefghijklmnopqrstuvwxyz@/()?¿¡!#$%&.,;";
@@ -111,15 +109,17 @@ switch (event.target.name) {
                       </li>
                     ))}
                   </ul>
-                  <p>Total: ${total}</p>
-                  <button className="btn btn-dark buy" disabled={!isFormValid} onClick={handleCheckout}>COMPRAR</button>
-                     {isLoading && <>
+                  {isLoading && <>
                         <div className="d-flex justify-content-center">
                             <div className="spinner-border text-primary mt-5" role="status">
                             <span className="visually-hidden">Loading...</span>
                             </div>
                         </div>
                     </>}
+                    {!isLoading && (<> 
+                    <p>Total: ${total}</p>
+                    <button className="btn btn-dark buy" disabled={!isFormValid} onClick={handleCheckout}>COMPRAR</button> 
+                    </>)}
                 </div>
             </form>
         </div>

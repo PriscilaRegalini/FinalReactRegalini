@@ -11,7 +11,7 @@ const CartProvider = ({ children }) => {
 
   const addItem = (product, quantity, count) => {
     const itemInCart = isInCart(product.id);
-console.log(count)
+
     if (itemInCart) {
       const newCart = cart.map((item) => {
        
