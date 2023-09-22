@@ -13,13 +13,13 @@
 
 https://github.com/PriscilaRegalini/FinalReactRegalini/assets/130780452/f9f33e69-e0f6-49b3-b237-02dc72147e57
 
-<h3> Deployed in </h3>
+## Deployed in 
 
 [shiny-duckanoo-26bed0.netlify.app](https://shiny-duckanoo-26bed0.netlify.app/)
 
 ---------
 
-<h3> :woman_technologist: Herramientas y lenguajes que se utilizaron para realizar esta entrega</h3><br>
+## :woman_technologist: Herramientas y lenguajes que se utilizaron <br>
 
 ![https://img.shields.io/badge/Adobe%20Illustrator-FF9A00?style=for-the-badge&logo=adobe%20illustrator&logoColor=white](https://img.shields.io/badge/Adobe%20Photoshop-31A8FF?style=for-the-badge&logo=Adobe%20Photoshop&logoColor=black)
  
@@ -46,6 +46,8 @@ https://github.com/PriscilaRegalini/FinalReactRegalini/assets/130780452/f9f33e69
 
 ![https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E](https://img.shields.io/badge/Vite-B73BFE?style=for-the-badge&logo=vite&logoColor=FFD62E)
 
+![https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E](https://img.shields.io/badge/Netlify-00C7B7?style=for-the-badge&logo=netlify&logoColor=white)
+
 ------------
 
 ## Cómo levantar el proyecto
@@ -57,7 +59,7 @@ npm install
 npm run dev
 
 ```
-
+##  :warning:  Firebase configuration	 
 Para el correcto funcionamiento, es necesario tener seteadas las variables de entorno en el archivo `.env`. Las variables son:
 
 - `VITE_API_KEY`: la API key de Firebase.
@@ -96,7 +98,7 @@ Counter es un componente que utiliza el hook "useCounter" permite que se pueda a
 
 ### Hooks
 
-Es una carpeta que contiene varios hooks que son utilizados en el proyecto. Todos con relación al cart y la orden de compras.
+Es una carpeta que contiene hooks que son utilizados en el proyecto. 
 
 ### ItemDetail
 
@@ -122,10 +124,14 @@ ItemPresentation es el componente que se encarga de mostrar información de cóm
 
 ItemListContainer es el componente que contiene la lógica necesaria para poder mostrar el listado de productos. 
 
+### utilities
+
+Utilities contiene varios archivos .js que son funciones que se usan dentro del contexto, especificamente para el cart y la orden de compras. 
+
 ### services
 
 services se encarga de hacer las llamadas al backend. 
 
 ---------
 
-<p> <strong>Este es una entrega final para el curso de REACT JS de COERHOUSE con fines meramente educativos. </strong></p>
+<p> <strong>Esta es una entrega final para el curso de REACT JS de COERHOUSE con fines meramente educativos. </strong></p>
